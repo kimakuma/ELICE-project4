@@ -144,7 +144,7 @@ export const banUserQ = async (
     await db.query(`UPDATE comment SET active = ? WHERE userId = ? `, [
       active,
       userId,
-    ]),
+    ])
   ]);
 
   return true;
